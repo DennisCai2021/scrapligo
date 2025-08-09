@@ -5,7 +5,7 @@ default:
   privilege-levels:
     exec:
       name: 'exec'
-      pattern: '.*>'
+      pattern: '(?im)^[\w.\-@/:]{1,63}\s[[\w.\-@/:\s]{1,63}]\s>\s$'
       previous-priv:
       deescalate:
       escalate:
@@ -13,7 +13,7 @@ default:
       escalate-prompt:
     privilege-exec:
       name: 'privilege-exec'
-      pattern: '.*\[.*\]\s#\s'
+      pattern: '(?im)^[\w.\-@/:]{1,63}\s[[\w.\-@/:\s]{1,63}]\s#\s$'
       previous-priv: 'exec'
       deescalate: 'disable'
       escalate: 'enable'
@@ -21,7 +21,7 @@ default:
       escalate-prompt:
     configuration:
       name: 'configuration'
-      pattern: '.*\[.*\]\s\(config\)\s#\s'
+      pattern: '(?im)^[\w.\-@/:]{1,63}\s[[\w.\-@/:\s]{1,63}]\s\(config\)\s#\s$'
       previous-priv: 'privilege-exec'
       deescalate: 'exit'
       escalate: 'configure terminal'
