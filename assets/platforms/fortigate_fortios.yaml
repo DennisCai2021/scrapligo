@@ -1,0 +1,22 @@
+---
+platform-type: 'fortigate_fortios'
+default:
+  driver-type: 'network'
+  privilege-levels:
+    exec:
+      name: 'exec'
+      pattern: '.*\s\$\s'
+      previous-priv: ''
+      deescalate: ''
+      escalate: ''
+      escalate-auth: false
+      escalate-prompt:
+  default-desired-privilege-level: 'exec'
+  failed-when-contains:
+    - "Command fail"
+    - "Unknown action"
+  textfsm-platform: 'fortigate_fortios' # ignored in go because no ntc-templates
+  network-on-close:
+    - operation: 'channel.write'
+      input: 'exit'
+    - operation: 'channel.return'

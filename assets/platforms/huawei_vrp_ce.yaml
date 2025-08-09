@@ -16,7 +16,7 @@ default:
       pattern: '(?im)^[[\w.\-@/:]{1,63}]$'
       previous-priv: 'exec'
       deescalate: 'quit'
-      escalate: 'system-view'
+      escalate: 'system-view immediately'
       escalate-auth: false
       escalate-prompt:
   default-desired-privilege-level: 'exec'
