@@ -31,13 +31,19 @@ const (
 	CumulusLinux = "cumulus_linux"
 	// CumulusVtysh is a constant representing the platform string/name for Cumulus vtysh devices.
 	CumulusVtysh = "cumulus_vtysh"
+	// FortigateFortiOS is a constant representing the platform string/name for Fortigate devices.
+	FortigateFortiOS = "fortigate_fortios"
 	// HpComware is a constant representing the platform string/name for H3C devices.
 	HpComware = "hp_comware"
 	// HuaweiVrp is a constant representing the platform string/name for Huawei VRP devices.
 	HuaweiVrp = "huawei_vrp"
+	// HuaweiVrpCe is a constant representing the platform string/name for Huawei VRP CE devices.
+	HuaweiVrpCe = "huawei_vrp_ce"
 	// IpinfusionOcnos is a constant representing the platform string/name for Ipinfusion OCNos
 	// devices.
 	IpinfusionOcnos = "ipinfusion_ocnos"
+	// MellanoxOnyx is a constant representing the platform string/name for Mellanox Onyx devices.
+	MellanoxOnyx = "mellanox_onyx"
 	// JuniperJunos is a constant representing the platform string/name for Juniper JunOS devices.
 	JuniperJunos = "juniper_junos"
 	// NokiaSrl is a constant representing the platform string/name for Nokia SRL/SRLinux devices.
@@ -67,9 +73,12 @@ func GetPlatformNames() []string {
 		CiscoNxos,
 		CumulusLinux,
 		CumulusVtysh,
+		FortigateFortiOS,
 		HpComware,
 		HuaweiVrp,
+		HuaweiVrpCe,
 		IpinfusionOcnos,
+		MellanoxOnyx,
 		JuniperJunos,
 		NokiaSrl,
 		NokiaSros,
