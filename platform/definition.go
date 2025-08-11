@@ -31,8 +31,8 @@ const (
 	CumulusLinux = "cumulus_linux"
 	// CumulusVtysh is a constant representing the platform string/name for Cumulus vtysh devices.
 	CumulusVtysh = "cumulus_vtysh"
-	// FortigateFortiOS is a constant representing the platform string/name for Fortigate devices.
-	FortigateFortiOS = "fortigate_fortios"
+	// FortinetFortiOS is a constant representing the platform string/name for Fortinet devices.
+	FortinetFortiOS = "fortinet_fortios"
 	// HpComware is a constant representing the platform string/name for H3C devices.
 	HpComware = "hp_comware"
 	// HuaweiVrp is a constant representing the platform string/name for Huawei VRP devices.
@@ -73,7 +73,7 @@ func GetPlatformNames() []string {
 		CiscoNxos,
 		CumulusLinux,
 		CumulusVtysh,
-		FortigateFortiOS,
+		FortinetFortiOS,
 		HpComware,
 		HuaweiVrp,
 		HuaweiVrpCe,
