@@ -5,7 +5,7 @@ default:
   privilege-levels:
     exec:
       name: 'exec'
-      pattern: '(?im)^[\w.\-@/:]{1,63}\s\$\s$'
+      pattern: '(?im)^[\w.\-@/:~]{1,63}\s\$\s$'
       previous-priv: ''
       deescalate: ''
       escalate: ''
