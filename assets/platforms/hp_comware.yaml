@@ -5,7 +5,7 @@ default:
   privilege-levels:
     exec:
       name: 'exec'
-      pattern: '(?im)^<[\w.\-@/:]{1,63}>$'
+      pattern: '<[\w.\-@/:]{1,63}>$'
       previous-priv:
       deescalate:
       escalate:
@@ -13,7 +13,7 @@ default:
       escalate-prompt:
     configuration:
       name: 'configuration'
-      pattern: '(?im)^[[\w.\-@/:]{1,63}]$'
+      pattern: '[[\w.\-@/:]{1,63}]$'
       previous-priv: 'exec'
       deescalate: 'quit'
       escalate: 'system-view'

@@ -27,7 +27,7 @@ default:
     - 'Error:Ambiguous command'
     - 'Error:Too many parameters'
     - 'Error:Incomplete command'
-  textfsm-platform: 'huawei_vrp' # ignored in go because no ntc-templates
+  textfsm-platform: 'huawei_vrp_ce' # ignored in go because no ntc-templates
   network-on-open:
     - operation: 'acquire-priv' # targets default desired priv by default
     - operation: 'driver.send-command'
